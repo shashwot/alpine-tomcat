@@ -10,7 +10,7 @@ RUN apk add --allow-untrusted /opt/glibc-2.30-r0.apk && \
     mv /opt/apache-tomcat-9.0.30 /opt/tomcat && \
     mv /opt/jdk1.8.0_231 /opt/.java && \
     rm -rf /opt/*.tar.gz \
-           /opt/glibc-2.30.r0.apk \
+           /opt/*.apk \
            /opt/.java/jre/plugin \
            /opt/.java/jre/bin/javaws \
            /opt/.java/jre/bin/orbd \
