@@ -1,15 +1,41 @@
-# alpine-tomcat
-Contains Java Jdk 1.8 with Tomcat 9.0.30
+## Welcome to Apache Tomcat!
 
+### What Is It?
 
-Tomcat with Java Jdk 1.8
+The Apache Tomcat software is an open source implementation of the Java
+Servlet, JavaServer Pages, Java Expression Language and Java WebSocket
+technologies. The Java Servlet, JavaServer Pages, Java Expression Language and
+Java WebSocket specifications are developed under the
+[Java Community Process](https://jcp.org/en/introduction/overview).
 
-Download the jdk-8u231-linux-x64.tar.gz from : https://www.oracle.com/java/technologies/javase-jdk8-downloads.html
+The Apache Tomcat software is developed in an open and participatory
+environment and released under the
+[Apache License version 2](https://www.apache.org/licenses/). The Apache Tomcat
+project is intended to be a collaboration of the best-of-breed developers from
+around the world. We invite you to participate in this open development
+project. To learn more about getting involved,
+[click here](https://tomcat.apache.org/getinvolved.html) or keep reading.
 
-Download the glibc-2.30-r0.apk from : https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.30-r0/glibc-2.30-r0.apk
+Apache Tomcat software powers numerous large-scale, mission-critical web
+applications across a diverse range of industries and organizations. Some of
+these users and their stories are listed on the
+[PoweredBy wiki page](https://wiki.apache.org/tomcat/PoweredBy).
 
-Download tomcat from : https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.30/bin/
+Apache Tomcat, Tomcat, Apache, the Apache feather, and the Apache Tomcat
+project logo are trademarks of the Apache Software Foundation.
 
-Copy the downloaded Files to the location where the Dockerfile is created.
+<br>
 
-docker build -t name:tag .
+### Get It
+
+Tomcat 9.0.30 with Oracle java 1.8
+
+`docker pull shashwot/alpine-tomcat:latest`
+
+Port expose
+
+` docker run -it --name tomcat -p 8080:8080 shashwot/alpine-tomcat:latest `
+
+### Documentation
+
+You can access that webapp by starting tomcat and visiting http://localhost:8080/ in your browser.
